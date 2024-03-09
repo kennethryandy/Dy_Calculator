@@ -147,8 +147,8 @@ del.addEventListener("click", function () {
 equal.addEventListener("click", function () {
   // first we make sure that, selectedOperator, currentEnteredNumber, and previousEnteredNumber is all not empty
   if ( selectedOperator !== "" && currentEnteredNumber !== "" && previousEnteredNumber !== "" ) {
-    upperDisplay.innerHTML = upperDisplay.innerHTML + " " + currentEnteredNumber + " " + selectedOperator;
-    let finalResult = calculate(selectedOperator, previousEnteredNumber, currentEnteredNumber);
+   let finalResult = calculate(selectedOperator, previousEnteredNumber, currentEnteredNumber);
+   upperDisplay.innerHTML = upperDisplay.innerHTML + " " + currentEnteredNumber + " = " + finalResult;
     lowerDisplay.innerHTML = finalResult;
     // we set the isEqualIsClicked to true
     isEqualIsClicked = true;
